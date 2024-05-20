@@ -1,6 +1,6 @@
 * connect ssh (port 22 default)
 * enable port inbound on aws, 80 http, [PORT] default tcp
-* allow firewal 300 
+* allow firewal port
 ```bash
 sudo ufw enable
 sudo ufw allow [PORT]
