@@ -1,7 +1,7 @@
 FROM node:20-alpine
 WORKDIR /app
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json bash.sh ./
+RUN bash bash.sh
 COPY . .
-RUN /bash.sh
 EXPOSE 3000
 CMD [ "npm", "run", "dev" ]
